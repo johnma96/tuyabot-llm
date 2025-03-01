@@ -205,7 +205,6 @@ cython_debug/
 *.csv
 *.gsheet
 *.msg
-/data/raw/*.json
 
 # Credentials files
 credentials/*.json
