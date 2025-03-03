@@ -212,3 +212,5 @@ credentials/*.json
 # Experimental models mlflow
 models/mlruns/*
 !/models/mlruns/*.gitkeep
+
+!/references/*.pdf
