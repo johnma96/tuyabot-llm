@@ -19,7 +19,7 @@ TuyaBot-LLM is a chatbot based on a [RAG](https://www.databricks.com/glossary/re
 
 ## Demo: How to interact with the local LLM 🤖️️️️
 
-![GIF DEMO](/reports/figures/Grabación%202025-03-02%20190228.gif)
+![GIF DEMO](/reports/figures/demo-gif-ezgif.com-crop.gif)
 
 ## Repository structure. 🗂️
 
