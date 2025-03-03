@@ -12,8 +12,12 @@ class GetTextWebPages:
         """
         self.url = url
         response = requests.get(url, headers=headers)
-        soup = BeautifulSoup(response.content, 'html.parser')
-        self.title = soup.title.string if soup.title else "No title found"
-        for irrelevant in soup.body(["script", "style", "img", "input"]):
-            irrelevant.decompose()
-        self.text = soup.body.get_text(separator="\n", strip=True)
+        response.encoding = 'utf-8'
+        if response.status_code == 200:
+            soup = BeautifulSoup(response.content, 'html.parser')
+            self.title = soup.title.string if soup.title else "No title found"
+            for irrelevant in soup.body(["script", "style", "img", "input"]):
+                irrelevant.decompose()
+            self.text = soup.body.get_text(separator="\n", strip=True)
+        else:
+            print(f'Error al acceder a la página: {response.status_code}')

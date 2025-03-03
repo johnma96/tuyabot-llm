@@ -205,7 +205,6 @@ cython_debug/
 *.csv
 *.gsheet
 *.msg
-/data/raw/*.json
 
 # Credentials files
 credentials/*.json
@@ -213,3 +212,5 @@ credentials/*.json
 # Experimental models mlflow
 models/mlruns/*
 !/models/mlruns/*.gitkeep
+
+!/references/*.pdf
