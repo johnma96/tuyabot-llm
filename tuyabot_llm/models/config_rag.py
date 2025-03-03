@@ -1,4 +1,5 @@
 import os
+import torch
 
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline 
 from langchain_huggingface import HuggingFacePipeline
@@ -48,11 +49,12 @@ class ConfigRAG:
             Configured language model.
         """
     
-
         model_id = 'unsloth/Llama-3.2-1B-Instruct' 
         tokenizer = AutoTokenizer.from_pretrained(model_id, device="cuda:0", truncation=True)
-        model = AutoModelForCausalLM.from_pretrained(model_id) 
 
+        device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+        model = AutoModelForCausalLM.from_pretrained(model_id)
+        model.to(device) 
 
         pipe = pipeline(
             "text-generation",
@@ -61,7 +63,8 @@ class ConfigRAG:
             max_length=max_length,
             temperature=temperature,
             top_k=top_k,
-            truncation=True
+            truncation=True,
+            device=device
             # repetition_penalty=1.5,
             # no_repeat_ngram_size=4,  # Ajusta el tamaño de los n-gramas que no se pueden repetir
         )
