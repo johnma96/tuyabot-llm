@@ -24,6 +24,12 @@ TuyaBot-LLM is a chatbot based on a [RAG](https://www.databricks.com/glossary/re
 
 
 ## How reproduce in your local machine
+The device tested on is an HP Victus with the following specifications:
+
+- Processor 12th Gen Intel(R) Core(TM) i5-12500H 2.50 GHz
+- Installed RAM 16.0 GB (15.7 GB usable)
+- Installed GPU NVIDIA GFORCE RTX 3050 4.0 GB
+
 1. [Clone the repository](#cloning-this-repository)
 2. [Create a virtual environment](#setting-up-a-virtual-environment) and activate it
 3. Install dependencies: In bash, use the next commands, Be careful, your GPU shoul support cuda 12.6. [Here](https://pytorch.org/get-started/locally/) to get more information
