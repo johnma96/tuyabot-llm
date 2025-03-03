@@ -63,4 +63,6 @@ class UseRAG(ConfigRAG):
 
         output = rag_chain.invoke(question)
 
+        output = 'Pregunta: '+ '\n'.join([element.strip() for element in output.split("Pregunta:")[-1].split("'\n")])
+
         return  output
