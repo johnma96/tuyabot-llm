@@ -221,3 +221,5 @@ models/mlruns/*
 !/models/mlruns/*.gitkeep
 
 !/references/*.pdf
+
+!/reports/pdfs/*.pdf

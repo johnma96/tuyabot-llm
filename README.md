@@ -6,6 +6,7 @@ Creator: John Mario Montoya Zapata 👨‍💻
 | User                      | Version | date       |
 |---------------------------|---------|------------|
 | John Mario Montoya Zapata | 0.1.0   | 2025-02-28 |
+| John Mario Montoya Zapata | 1.0.2   | 2025-03-03 |
 |                           |         |            |
 
 ## Description 📚
