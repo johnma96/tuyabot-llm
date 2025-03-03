@@ -145,7 +145,7 @@ celerybeat.pid
 
 # Environments
 .env
-.venv
+.venv*
 env/
 venv/
 ENV/
@@ -208,6 +208,12 @@ cython_debug/
 
 # Credentials files
 credentials/*.json
+
+# Gradio folders
+.gradio*
+
+# Vector databes
+data/raw/tuya_collection/*
 
 # Experimental models mlflow
 models/mlruns/*
