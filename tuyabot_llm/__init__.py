@@ -1,3 +1,4 @@
 from .utils import AbsolutePaths
-from .data import GetTextWebPages
+from .data import GetInfoWebPages
 from .models import UseRAG
+from .features import InfoToVectors
