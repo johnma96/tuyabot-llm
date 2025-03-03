@@ -197,6 +197,7 @@ cython_debug/
 *.pptx
 *.png
 *.pdf
+*.mp4
 !docs/model_architecture.png
 
 # Data files
