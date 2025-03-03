@@ -2,7 +2,9 @@
 Informe de Desarrollo de Producto de IA Generativa para TUYA SA
 ===========================================================
 # Resumen
-Este informe describe el desarrollo de un producto de IA generativa que proporciona información contextualizada sobre los productos financieros de TUYA SA. El producto utiliza una arquitectura RAG (Retrieve, Augment, Generate) que combina un modelo LLM (Large Language Model) con una base de datos vectorial para generar respuestas personalizadas. A lo largo del texto encontrará links útiles que se han consultado para el desarrollo de la prueba.
+Este informe describe el desarrollo de un producto de IA generativa que proporciona información contextualizada sobre los productos financieros de TUYA SA. El producto utiliza una arquitectura RAG (Retrieve, Augment, Generate) que combina un modelo LLM (Large Language Model) con una base de datos vectorial para generar respuestas personalizadas. A lo largo del texto encontrará links útiles que se han consultado para el desarrollo de la prueba. 
+
+Aquí se puede ir directamente al [repositorio en GitHub](https://github.com/johnma96/tuyabot-llm).
 
 # Esquema de desarrollo
 **1. Creación del Repositorio en GitHub:**
