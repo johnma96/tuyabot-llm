@@ -1,1 +1,1 @@
-from .get_text_web_pages import GetTextWebPages
+from .get_info_webpages import GetInfoWebPages
