@@ -39,6 +39,9 @@ nltk==3.9.1
 pip-chill==1.0.3
 pycryptodome==3.21.0
 pyprojroot==0.3.0
-torchaudio==2.6.0+cu126 # torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
-torchvision==0.21.0+cu126
 watchfiles==1.0.4
+
+# Please, install pytorch using the next command (Be careful, your GPU shoul support cuda 12.6). 
+# https://pytorch.org/get-started/locally/#windows-pip to get more information 
+
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126

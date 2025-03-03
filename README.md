@@ -13,13 +13,41 @@ TuyaBot-LLM is a chatbot based on a [RAG](https://www.databricks.com/glossary/re
 
 ## Table of contents 📋
 1. [Demo: How to interact with the local LLM](#model-for-default-prediction-block-diagram)
-2. [Repository structure](#repository-structure)
-3. [Cloning this repository](#cloning-this-repository)
-4. [Setting up a virtual environment](#setting-up-a-virtual-environment)
+2. [How reproduce in your local machine](#how-reproduce-in-your-local-machine)
+3. [Repository structure](#repository-structure)
+4. [Cloning this repository](#cloning-this-repository)
+5. [Setting up a virtual environment](#setting-up-a-virtual-environment)
 
 ## Demo: How to interact with the local LLM 🤖️️️️
 
 ![GIF DEMO](/reports/figures/demo-gif-ezgif.com-crop.gif)
+
+
+## How reproduce in your local machine
+The device tested on is an HP Victus with the following specifications:
+
+- Processor 12th Gen Intel(R) Core(TM) i5-12500H 2.50 GHz
+- Installed RAM 16.0 GB (15.7 GB usable)
+- Installed GPU NVIDIA GFORCE RTX 3050 4.0 GB
+
+1. [Clone the repository](#cloning-this-repository)
+2. [Create a virtual environment](#setting-up-a-virtual-environment) and activate it
+3. Install dependencies: In bash, use the next commands, Be careful, your GPU shoul support cuda 12.6. [Here](https://pytorch.org/get-started/locally/) to get more information
+
+```bash
+pip install -r requirements.txt
+```
+```bash
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
+```
+4. In parent directory run the next command to get the base information
+```bash
+python main.py make_data
+```
+5. Run application using the next command
+```bash
+python app.py
+```
 
 ## Repository structure. 🗂️
 
@@ -35,7 +63,7 @@ Other resources.
 ├── LICENSE
 |
 ├── README.md                        <- You are here
-||
+|
 ├── app/                             <- Folder to store the API that exposes the model
 |
 ├── credentials/                     <- Folder to store credentials files
@@ -87,6 +115,8 @@ Other resources.
 ├── .gitignore                       <- Gitignore file 
 |
 ├── install.md                       <- Instructions to configure virtual environments and install the package as a distributable 
+|
+├── app.py                           <- Application running with Gradio locally
 |
 ├── main.py                          <- Main file to orchestrate re-trains and execution of source code stored in src folder
 |
