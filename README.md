@@ -1,6 +1,6 @@
-# TuyaBOT LLM
+# TuyaBOT LLM 🤖️️️️
 
-Creator: John Mario Montoya Zapata
+Creator: John Mario Montoya Zapata 👨‍💻
 
 ## Version history:
 | User                      | Version | date       |
@@ -8,20 +8,20 @@ Creator: John Mario Montoya Zapata
 | John Mario Montoya Zapata | 0.1.0   | 2025-02-28 |
 |                           |         |            |
 
-## Description
-TuyaBot-LLM is a Python-based chatbot that uses a large language model (LLM) and web data from a finance company to answer finance-related questions. It combines NLP with company-specific information to provide accurate, real-time responses to user queries.
+## Description 📚
+TuyaBot-LLM is a chatbot based on a [RAG](https://www.databricks.com/glossary/retrieval-augmented-generation-rag) architecture, which uses an large language model (LLM), the [unsloth/Llama-3.2-1B-Instruct](https://huggingface.co/unsloth/Llama-3.2-1B-Instruct) from meta, and the web information available from the financial company [TUYA S.A](https://www.tuya.com.co/yo-tengo) to answer questions related to its products and services.
 
-## Table of contents
-1. [Model for default prediction: Block diagram](#model-for-default-prediction-block-diagram)
+## Table of contents 📋
+1. [Demo: How to interact with the local LLM](#model-for-default-prediction-block-diagram)
 2. [Repository structure](#repository-structure)
 3. [Cloning this repository](#cloning-this-repository)
 4. [Setting up a virtual environment](#setting-up-a-virtual-environment)
 
-## Model for default prediction: Architecture
+## Demo: How to interact with the local LLM 🤖️️️️
 
-![diagram](/reports/figures/model_architecture.png)
+![GIF DEMO](/reports/figures/Grabación%202025-03-02%20190228.gif)
 
-## Repository structure.
+## Repository structure. 🗂️
 
 This project structure was partially influenced by the [Cookiecutter Data Science project](https://drivendata.github.io/cookiecutter-data-science/) and [reproducible-model](https://github.com/cmawer/reproducible-model) repository.
 
@@ -35,9 +35,7 @@ Other resources.
 ├── LICENSE
 |
 ├── README.md                        <- You are here
-|
-├── .dvc/                            <- Folder with remote source configuration for the DVC library
-|
+||
 ├── app/                             <- Folder to store the API that exposes the model
 |
 ├── credentials/                     <- Folder to store credentials files
@@ -74,13 +72,7 @@ Other resources.
 │   ├── visualization/               <- Scripts to generate evaluation graphs or reports 
 │   └── utils/
 │      ├── __init__.py
-│      ├── absolute_paths.py         <- Module for handling absolute path
-│      ├── make_connection.py        <- Module to generate connections to different RDBMS
-│      ├── read_sql_file.py          <- Module for queries stored in .sql files
-│      ├── repair_str_columns.py     <- Module to repair columns transformed from string to numbers
-│      ├── save_data.py              <- Module to ingest data to different RDBMS
-│      ├── utilities.py              <- Module with utility functions of the package
-│      └── load_data.py              <- Module for reading data from different RDBMS
+│      └── absolute_paths.py         <- Module for handling absolute path
 │
 ├── queries/                         <- Folder to store .sql files used at some point in the modeling process   
 │   ├── develop/                     <- Queries created in bulding process 
@@ -98,15 +90,19 @@ Other resources.
 |
 ├── main.py                          <- Main file to orchestrate re-trains and execution of source code stored in src folder
 |
+├── main.ipynb                       <- Like main.py but intended for testing before launching deployments
+|
+├── setup.py                         <- Defines project metadata, dependencies, and installation requirements for distribution.
+|
 └── run.sh                           <- Executable with predefined commands to run main.py file on a remote server
 ```
 
 ## Cloning this repository.
 
 - To clone this repository using SSH run the next command in your git console
-> `git clone path_to_repository/tuyabot_llm.git`
+> `git clone git@github.com:johnma96/tuyabot-llm.git`
 - To clone this repository using HTTPS run the next command in your git console
-> `git clone https://path_to_azure_devops_repositories/tuyabot_llm.git`
+> `git clone https://github.com/johnma96/tuyabot-llm.git`
 
 For more details see [Clone a repository](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html#clone-a-repository).
 
