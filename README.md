@@ -32,7 +32,7 @@ The device tested on is an HP Victus with the following specifications:
 
 1. [Clone the repository](#cloning-this-repository)
 2. [Create a virtual environment](#setting-up-a-virtual-environment) and activate it
-3. Install dependencies: In bash, use the next commands, Be careful, your GPU shoul support cuda 12.6. [Here](https://pytorch.org/get-started/locally/) to get more information
+3. Install dependencies: In bash, use the next commands, Be careful, your GPU shoul support cuda 12.6. [Here](https://pytorch.org/get-started/locally/) to get more information. Otherwise, the model will be installed on CPU.
 
 ```bash
 pip install -r requirements.txt
